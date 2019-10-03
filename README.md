@@ -7,10 +7,10 @@ In this application, Spring Boot, Hibernate, JPA and REST techniques are used by
 * Eclipse 4.6+ or Spring Tool Suite(STS)
 * Spring Boot 2.1.7
 * Hibernate 5.3.10
-* JavaScript 1.0, Single Page Application
+* JavaScript, Single Page Application
 
 
-## Clone the example
+## Clone the Example
 ```bash
 $ git clone https://github.com/zguven/SpringBootRest.git
 ```

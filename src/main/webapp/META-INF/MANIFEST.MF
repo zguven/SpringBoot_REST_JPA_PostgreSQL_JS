@@ -1,0 +1,8 @@
+Manifest-Version: 1.0.0
+Implementation-Title: SpBootRestJPA
+Implementation-Version: 1.0.Final
+Built-By: Zulkif Guven
+Implementation-Vendor-Id: selimsql
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://github.com/zguven/SpringBootRest
+Implementation-Vendor: SelimSql
