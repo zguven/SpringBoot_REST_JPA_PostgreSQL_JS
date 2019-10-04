@@ -12,7 +12,7 @@ In this application, Spring Boot, Hibernate, JPA and REST techniques are used by
 
 ## Clone the Example
 ```bash
-$ git clone https://github.com/zguven/SpringBootRest.git
+$ git clone https://github.com/zguven/SpringBoot_REST_JPA_PostgreSQL_JS.git
 ```
 
 
@@ -66,7 +66,7 @@ spring.datasource.password=postgres
 
 
 ## Package and test the application
-You can package the application as JAR file and then run it like this
+You can package the application as JAR file and then run it like this:
 
 ```
 $ mvnw clean package
@@ -74,7 +74,7 @@ $ mvnw clean package
 
 
 ## Run the application
-Type the following command from the root directory of the project
+Type the following command from the root directory of the project:
 
 ```
 $ mvnw spring-boot:run
@@ -84,7 +84,7 @@ $ java -jar target/SpringBootRestJPAUserCRUD-0.0.1.jar
 
 
 ## Test the application on browser
-After running the application, type this url on a browser: [localhost:8080](http://localhost:8080/)
+After starting the application, type this url on a browser: [localhost:8080](http://localhost:8080/)
 
 
 <img alt="UserList-Screenshot" src="src/main/resources/_temp/screen/UserList.png">

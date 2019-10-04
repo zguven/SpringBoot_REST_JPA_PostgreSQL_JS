@@ -18,25 +18,24 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class AppStarterTest {
 	private static final String APP_NAME = AppStarterTest.class.getSimpleName();
 
-    @LocalServerPort
-    private int port;
+	@LocalServerPort
+	private int port;
 
-    @Autowired
-    private TestRestTemplate restTemplate;
-
+	@Autowired
+	private TestRestTemplate restTemplate;
 
 	@Test
 	public void contextLoads() {
-    	System.out.println(APP_NAME + ".contextLoads");
+		System.out.println(APP_NAME + ".contextLoads");
 	}
 
-    @Test
-    public void getMainPage() throws Exception {
-    	String urlBase = "http://localhost:" + port + "/";
-    	System.out.println(APP_NAME + ".contextLoads.urlBase: " + urlBase);
-        ResponseEntity<String> response = restTemplate.getForEntity(urlBase, String.class);
-        HttpStatus httpStatus = response.getStatusCode();
-    	System.out.println(".response.getStatusCode: " + httpStatus.name());
-        assertEquals(HttpStatus.OK, httpStatus);
-    }
+	@Test
+	public void getMainPage() throws Exception {
+		String urlBase = "http://localhost:" + port + "/";
+		System.out.println(APP_NAME + ".contextLoads.urlBase: " + urlBase);
+		ResponseEntity<String> response = restTemplate.getForEntity(urlBase, String.class);
+		HttpStatus httpStatus = response.getStatusCode();
+		System.out.println(".response.getStatusCode: " + httpStatus.name());
+		assertEquals(HttpStatus.OK, httpStatus);
+	}
 }
